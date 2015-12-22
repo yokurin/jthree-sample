@@ -123,7 +123,7 @@ DebuggerContentSelector = (function(superClass) {
       inputs: [],
       selected: Cookie.get('debugTarget')
     };
-    Agent.get('./debug.js').end((function(_this) {
+    Agent.get('./debug.json').end((function(_this) {
       return function(e, r) {
         var inputs, k, ref, resObj, v;
         if (e) {
